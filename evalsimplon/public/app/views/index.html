@@ -2,13 +2,60 @@
 <html ng-app="myApplication">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <title>A style diary by Ayshoox</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+     <script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+
+    <script type="text/javascript" src="../app.js"> </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/connexion.css">
+    <!-- Start WOWSlider.com HEAD section -->
+    <link rel="stylesheet" type="text/css" href="views/engine1/style.css" />
+    <script type="text/javascript" src="views/engine1/jquery.js"></script>
+    <!-- End WOWSlider.com HEAD section -->
   </head>
   <body>
-    <h1>BONJOUR</h1>
-    <!--<script type="text/javascript" src="../../../node_modules/angular/angular.min.js"></script>-->
-    <script type="text/javascript" src="app/app.js"> </script>
-    <script type="text/javascript" src="app/controllers/homeCtrl.js"> </script>
+    <header>
+      <nav>
+        <ul ng-controller="MainController">
+          <li><a href="#/article">Accueil</a></li>
+          <li><a href="#/article">Fashion</a></li>
+          <li><a href="#/article">Photo Diary</a></li>
+          <li><a href="#/article"><h1>AYSHOOX</h1></a></li>
+          <li><a href="#/article" id="myBtn">Contact</a></li>
+          <li><a href="#/connexion">Connexion</a></li>
+          <input type="search" name="name" value="Votre recherche">
+        </ul>
+      </nav>
+    </header>
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">×</span>
+        <div class="contact-gauche">
+            <h1>Contactes nous</h1>
+            <p>Nom</p>
+            <input type="text" name="nom" value="">
+            <p>E-mail</p>
+            <input type="text" name="email" value="">
+            <p>Ton message</p>
+            <textarea name="message" rows="8" cols="30"></textarea>
+            <button type="submit" name="button"></button>
+        </div>
+        <div class="contact-image">
+          <img src="../img/mail.jpeg" alt="">
+        </div>
+      </div>
+
+    </div>
+    <main ng-view></main>
+    <script type="text/javascript" src="js/connexion.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="views/engine1/wowslider.js"></script>
+    <script type="text/javascript" src="views/engine1/script.js"></script>
   </body>
 </html>

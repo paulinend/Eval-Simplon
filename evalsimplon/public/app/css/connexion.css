@@ -1,0 +1,148 @@
+.main-wrapper {
+  max-width: 650px;
+  margin: 0 auto;
+  height: 130vh;
+  margin-bottom: 50px;
+}
+/*.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}*/
+.main-wrapper  nav {
+  display: flex;
+
+}
+
+.main-wrapper nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.main-wrapper nav ul li {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.main-wrapper ul li:first-child {
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+  border-right: 2px solid grey;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.main-wrapper ul li:last-child {
+  border-bottom: 2px solid grey;
+  padding-right: 16px;
+  padding-left: 18px;
+
+
+}
+.main-wrapper h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 50px;
+
+}
+
+.main-content {
+  height: 100%;
+  display: none;
+}
+.main-content-button {
+display: flex;
+justify-content: space-around;;
+flex-direction: row;
+}
+
+.main-content-button button {
+  padding: 16px 60px 16px;
+  cursor: pointer;
+  border-color: transparent;
+  color: white;
+  font-weight: bold;
+}
+
+.main-content-button button:first-child {
+  background-color: #2D609B;
+}
+.main-content-button button:nth-child(2) {
+  background-color: #DC4E40;
+}
+
+.main-content-button button:last-child {
+  background-color: #00C3F3
+}
+
+.subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    max-width: 100%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+hr {
+  padding: 0;
+  border: none;
+  border-top: 1px solid #eee;
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+
+.main-content-bottom  {
+  height: 45px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: .4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+form button {
+  width: 50%;
+  padding: 12px 30px 12px;
+  cursor: pointer;
+  border-color: transparent;
+  color: white;
+  font-weight: bold;
+  background-color: #222222;
+  margin: 0 30px;
+  margin-top: 20px
+}
+
+form input {
+  width: 70%;
+  height: 40px;
+
+}
+.main-content2 {
+  display: none;
+}
+.main-content2 form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content2 form p {
+  width: 70%;
+}
+.active {
+  display: block;
+}
